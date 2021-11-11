@@ -1,8 +1,10 @@
-// import style from './Navigation.module.css';
+import style from './NavigationItem.module.css'
 
 
 export default function NavigationItem(props) {
     return (
-        <li className="listItem"><a href="#">{props.children}</a></li>
+        <li className="listItem">
+            <a href="#" className={style.navListItem}>{props.children}</a>
+        </li>
     )
 }
